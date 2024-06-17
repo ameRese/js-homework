@@ -9,14 +9,33 @@
 <body>
     <div class="counter">
         <div class="counter-number" id="js-counter">0</div>
-        <button class="button js-button" type="button">-</button>
-        <button class="button js-button" type="button">+</button>
-        <button class="button" id="js-random-button" type="button">Random</button>
-        <button class="button" id="js-reset-button" type="button">Reset</button>
+        <div class="function">
+            <button class="button js-button" type="button">-</button>
+            <button class="button js-button" type="button">+</button>
+            <button class="button" id="js-random-button" type="button">Random</button>
+            <button class="button" id="js-reset-button" type="button">Reset</button>
+        </div>
+
+        <div class="settings" id="js-settings">
+            <button class="button" id="js-settings-button" type="button">Settings</button>
+            <form class="form" id="js-form" hidden action="">
+                <label class="form-label">
+                    増減値:
+                    <input class="input-number" type="number">
+                </label>
+                <label class="form-label">
+                    ランダム範囲:
+                    <input class="input-number" type="number">
+                    ~
+                    <input class="input-number" type="number">
+                </label>
+            </form>
+        </div>
     </div>
-    
+
     <script src="./counter.js"></script>
     <script src="./reset.js"></script>
     <script src="./random.js"></script>
+    <script src="./settings.js"></script>
 </body>
 </html>

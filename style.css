@@ -7,6 +7,9 @@
     font-size: 50px;
     margin-bottom: 10px;
 }
+.function {
+    margin-bottom: 30px;
+}
 .button {
     font-size: 20px;
     padding: 10px 20px;
@@ -21,4 +24,17 @@
 .button:hover {
     opacity: 0.8;
     transition: opacity .25s;
+}
+.settings {
+    margin-bottom: 5px;
+}
+.form {
+    margin-top: 20px;
+}
+.form-label {
+    margin: 0 10px;
+}
+.input-number{
+    width: 60px;
+    height: 20px;
 }
