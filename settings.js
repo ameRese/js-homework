@@ -1,6 +1,7 @@
 (() => {
     const $form = document.getElementById('js-form');
 
+    // 設定フォーム表示切替
     const clickHandler = () => {
         if ($form.hidden) {
             $form.hidden = false;
@@ -18,5 +19,8 @@
     };
 
     document.getElementById('js-settings-button').addEventListener('click', clickHandler);
-    document.getElementById('js-count-unit').addEventListener('change', (e) => changeHandler(e));
+
+    for (let i = 0; i < document.getElementsByClassName('js-input-number').length; i++) {
+        document.getElementsByClassName('js-input-number')[i].addEventListener('change', (e) => changeHandler(e));
+    }
 })();
